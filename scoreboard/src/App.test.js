@@ -43,4 +43,6 @@ describe('<App />', () => {
     const thirdStrike = getByText(/strikes:/i).textContent
     expect(thirdStrike).toBe('Strikes: 0')
   })
+
+
 })

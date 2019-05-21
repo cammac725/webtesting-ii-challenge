@@ -29,11 +29,14 @@ class App extends Component {
   }
 
   foulHandler = () => {
-
+    const { strikes } = this.state;
+    if (strikes < 2) {
+      this.setState({ strikes: this.state.strikes + 1 })
+    }
   }
 
   hitHandler = () => {
-
+    this.setState({ balls: 0, strikes: 0 })
   }
 
   render() {

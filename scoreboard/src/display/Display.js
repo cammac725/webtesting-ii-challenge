@@ -5,8 +5,12 @@ function Display(props) {
 
   return (
     <div>
-      <div data-testid='ball-count'>{`Balls: ${balls}`}</div>
-      <div data-testid='strike-count'>{`Strikes: ${strikes}`}</div>
+      <div data-testid='ball-count'>
+        {`Balls: ${balls}`}
+      </div>
+      <div data-testid='strike-count'>
+        {`Strikes: ${strikes}`}
+      </div>
     </div>
   )
 }
