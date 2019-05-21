@@ -11,11 +11,21 @@ class App extends Component {
   }
 
   ballHandler = () => {
-
+    const { balls } = this.state;
+    if (balls < 3) {
+      this.setState({ balls: this.state.balls + 1 })
+    } else {
+      this.setState({ balls: 0 })
+    }
   }
 
   strikeHandler = () => {
-
+    const { strikes } = this.state;
+    if (strikes < 2) {
+      this.setState({ strikes: this.state.strikes + 1 })
+    } else {
+      this.setState({ strikes: 0 })
+    }
   }
 
   foulHandler = () => {
