@@ -15,7 +15,7 @@ class App extends Component {
     if (balls < 3) {
       this.setState({ balls: this.state.balls + 1 })
     } else {
-      this.setState({ balls: 0 })
+      this.setState({ balls: 0, strikes: 0 })
     }
   }
 
@@ -24,7 +24,7 @@ class App extends Component {
     if (strikes < 2) {
       this.setState({ strikes: this.state.strikes + 1 })
     } else {
-      this.setState({ strikes: 0 })
+      this.setState({ balls: 0, strikes: 0 })
     }
   }
 

@@ -42,7 +42,17 @@ describe('<App />', () => {
     fireEvent.click(button) //strike 3, should reset to 0
     const thirdStrike = getByText(/strikes:/i).textContent
     expect(thirdStrike).toBe('Strikes: 0')
+    cleanup()
   })
 
+  it('should reset all values to 0 when the hit button is clicked', () => {
+    const { getByText, getByTestId } = render(<App />)
+    const button = getByTestId('hit-button')
+    fireEvent.click(button)
+    const strikesResult = getByText(/strikes:/i).textContent
+    expect(strikesResult).toBe('Strikes: 0')
+    const ballsResult = getByText(/balls:/i).textContent
+    expect(ballsResult).toBe('Balls: 0')
+  })
 
 })
