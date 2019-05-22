@@ -42,19 +42,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Scoreboard</h1>
+        <div className='wrapper'>
+          <h1>Scoreboard</h1>
 
-        <Display
-          balls={this.state.balls}
-          strikes={this.state.strikes}
-        />
+          <Display
+            balls={this.state.balls}
+            strikes={this.state.strikes}
+          />
 
-        <Dashboard
-          ballHandler={this.ballHandler}
-          strikeHandler={this.strikeHandler}
-          foulHandler={this.foulHandler}
-          hitHandler={this.hitHandler}
-        />
+          <Dashboard
+            ballHandler={this.ballHandler}
+            strikeHandler={this.strikeHandler}
+            foulHandler={this.foulHandler}
+            hitHandler={this.hitHandler}
+          />
+        </div>
+
       </div>
     );
   }

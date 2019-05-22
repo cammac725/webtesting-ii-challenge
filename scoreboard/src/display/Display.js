@@ -4,7 +4,7 @@ function Display(props) {
   const { balls, strikes } = props
 
   return (
-    <div>
+    <div className='display'>
       <div data-testid='ball-count'>
         {`Balls: ${balls}`}
       </div>
