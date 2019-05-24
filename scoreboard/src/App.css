@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App .wrapper {
+  width: 50%;
+  margin:0 auto;
+}
+
+.App h1 {
+  font-size: 3rem;
+}
+
+.display {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 50px;
+  font-size: 2.5rem;
+}
+
+.dashboard .top-btns {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 150px;
+}
+
+.top-btns button {
+  width: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.hit-btn button {
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
